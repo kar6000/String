@@ -1,0 +1,16 @@
+package com.oct30;
+
+public class RemoveGivenCharFromString {
+
+	public static void main(String[] args) {
+		System.out.println(removeChar("google",'g'));
+
+	}
+  
+	private static String removeChar(String s, char c) {
+        if (s == null)
+            return null;
+        return s.replaceAll(Character.toString(c), "");
+    }
+
+}
